@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "azure-predictive-maintenance-team"
+version = "0.1.0"
+description = "Reproducible Azure Predictive Maintenance study"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26", "pandas>=2.1", "scikit-learn>=1.4", "matplotlib>=3.8", "seaborn>=0.13", "pyodbc>=5.0", "joblib>=1.3", "PyYAML>=6.0", "jupyterlab>=4.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

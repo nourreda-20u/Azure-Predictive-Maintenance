@@ -1,0 +1,9 @@
+dataset_version: pending-audit
+prediction_horizon_hours: 24 # proposed, not approved
+target: target
+split_strategy: global_chronological_pending_approval
+seed: 42
+models:
+  - decision_tree
+  - random_forest
+  - svm
